@@ -1,5 +1,6 @@
-// import './nav.css';
+import "./nav.css";
 import { Link, NavLink } from "react-router-dom";
+import { RiPlayListAddFill } from "react-icons/ri";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Sidebar() {
@@ -30,8 +31,10 @@ function Sidebar() {
             isActive ? "sidebar-item sidebar-active" : "sidebar-item"
           }
         >
-          <FontAwesomeIcon icon="clapperboard" className="sidebar-icon" />
-          <span>Playlists</span>
+          <div className="icon-chip">
+            <RiPlayListAddFill />
+            <span className="p-left-12">Playlists</span>
+          </div>
         </NavLink>
         <NavLink
           to="/liked"

@@ -16,6 +16,15 @@ body {
   color: var(--placeholder-color);
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
+} */
+.text-white {
+  color: var(--text-color);
+}
+.btn-no-decoration {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }

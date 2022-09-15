@@ -1,10 +1,11 @@
 import React from "react";
+import "./footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
     <>
-      <footer className="flex-column-center">
+      <footer className="footer-container flex-column-center">
         <p className="footer-header">
           Made with <span className="keyword">{`</>`}</span> by Bhavin Patel.
         </p>
@@ -19,7 +20,7 @@ function Footer() {
               <FontAwesomeIcon
                 icon={["fab", "github"]}
                 className="footer-icon-style"
-              ></FontAwesomeIcon>
+              />
             </a>
           </li>
           <li className="footer-item">
@@ -31,21 +32,25 @@ function Footer() {
             >
               <FontAwesomeIcon
                 icon={["fab", "twitter"]}
-                className="footer-icon-stye"
-              ></FontAwesomeIcon>
+                className="footer-icon-style"
+              />
             </a>
           </li>
-          <li className="footer-item">
+          <li className="footer-item footer-icon-style">
             <a
               href="https://in.linkedin.com/in/bhavinology"
               target="_blank"
               rel="noreferrer"
               aria-label="linkedin"
             >
+              {/* <i
+                class="fa fa-linkedin footer-icon fa-lg"
+                aria-hidden="true"
+              ></i> */}
               <FontAwesomeIcon
                 icon={["fab", "linkedin"]}
                 className="footer-icon-style"
-              ></FontAwesomeIcon>
+              />
             </a>
           </li>
         </ul>
